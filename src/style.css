@@ -13,3 +13,34 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.app-container {
+  display: grid;
+  gap: 16px;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  place-items: center;
+}
+
+.top-container__hex-code {
+  position: absolute;
+}
+
+.toggle-picker-mode {
+  all: unset;
+  border-radius: 50%;
+  background: lightgray;
+  padding: 8px;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:focus-visible {
+    border: 1px solid orange;
+  }
+}

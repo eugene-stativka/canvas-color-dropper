@@ -1,7 +1,8 @@
+import { initColorDropper } from "./color-dropper.ts";
 import "./style.css";
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    TODO
-  </div>
-`;
+const colorDropperContainer = document.getElementById("image-canvas-container");
+
+if (colorDropperContainer !== null) {
+  initColorDropper(colorDropperContainer);
+}
